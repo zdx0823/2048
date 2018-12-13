@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+
+
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#wrap{
+	width: 500px;
+	height: 590px;
+	margin: 0 auto;
+	position: relative;
+
+	/*禁止元素被选中*/
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none;  /*webkit浏览器*/
+    -ms-user-select: none;   /*IE10*/
+    user-select: none;
+
+}
+
+.count{
+	height: 90px;
+	padding: 20px 0 10px 0;
+}
+
+.count_wrap{
+	width: 173px;
+	height: 60px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.panel1,.panel2{
+	background: #bbada0;
+	height: 60px;
+	border-radius: 5px;
+}
+
+
+
+
+.panel1 span,.panel2 span{
+	color: #eee4da;
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	margin-top: 8px;
+}
+
+.panel1 strong,.panel2 strong{
+	font-size: 22px;
+	color: #fff;
+	display: block;
+	text-align: center;
+}
+
+.panel1{
+	width: 64px;
+	float: left;
+}
+
+.panel2{
+	width: 105px;
+	float: right;
+}
+
+
+.con{
+	width: 500px;
+	height: 500px;
+	background: #bbada0;
+	border-radius: 5px;
+	position: relative;
+}
+
+.con .col{
+	width: 106px;
+	height: 470px;
+	float: left;
+	margin: 15px 0 0 15px;
+}
+
+
+.con .bar{
+	width: 106px;
+	height: 106px;
+	margin-bottom: 15px;
+	background: #cdc1b4;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.con .innerBar{
+	width: 106px;
+	height: 106px;
+	background: #eee4da;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 106px;
+    color: #333;
+    opacity: 0;
+    border-radius: 5px;
+
+
+    transform: scale(.8);
+    transition: transform .2s,opacity .2s;
+}
+
+.con .bar:hover div{
+    transform: scale(1);
+    opacity: 1;
+}
+
+
+</style>
+
+<script src="js/zdx.js"></script>
+<script src="js/2048.js"></script>
+</head>
+<body>
+
+
+
+<div id="wrap">
+
+	<div class="count">
+		<div class="count_wrap">
+			<div class="panel1">
+				<span>当前积分</span>
+				<strong>0</strong>
+			</div>
+			<div class="panel2">
+				<span>最好成绩</span>
+				<strong>0</strong>
+			</div>
+		</div>
+	</div>
+
+	<div class="con">
+		<div class="col">
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+		</div>
+		<div class="col">
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+		</div>
+		<div class="col">
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+		</div>
+		<div class="col">
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">2</div></div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>
