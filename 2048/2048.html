@@ -110,6 +110,7 @@
     color: #333;
     opacity: 0;
     border-radius: 5px;
+    position: absolute;
 
 
     transform: scale(.8);
@@ -122,9 +123,30 @@
 }
 
 
+
+.con .t2{ background: #eee4da; color: #333; }
+.con .t4{ background: #ede0c8; color: #333; }
+.con .t8{ background: #f2b179; color: #fff; }
+.con .t16{ background: #f59563; color: #fff; }
+.con .t32{ background: #f67c5f; color: #fff; }
+.con .t64{ background: #f65e3b; color: #fff; }
+.con .t128{ background: #edcf72; color: #fff; box-shadow: 0 0 20px 2px rgba(242, 177, 121, .7) }
+.con .t256{ background: #edcc61; color: #fff; box-shadow: 0 0 20px 2px rgba(237, 204, 97, .7)  }
+.con .t512{ background: #edc850; color: #fff; box-shadow: 0 0 20px 2px rgba(237, 200, 80, .7)  }
+.con .t1024{ background: #edc53f; color: #fff; }
+.con .tMax{ background: #3c3a32; color: #fff; }
+
+
+
+
+
+
+
 </style>
 
 <script src="js/zdx.js"></script>
+<!-- <script src="js/2048comfn.js"></script> -->
+<script src="js/2048Constructor.js"></script>
 <script src="js/2048.js"></script>
 </head>
 <body>
@@ -148,28 +170,28 @@
 
 	<div class="con">
 		<div class="col">
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
 		</div>
 		<div class="col">
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
 		</div>
 		<div class="col">
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
 		</div>
 		<div class="col">
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
-			<div class="bar"><div class="innerBar">2</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
+			<div class="bar"><div class="innerBar">0</div></div>
 		</div>
 	</div>
 </div>
