@@ -29,6 +29,27 @@ function getFnName(str){
 
 
 
+
+function tmove(){
+
+
+}
+tmove.prototype = {
+
+	scale:function(){
+
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
 /**
  * 阻止浏览器默认行为
  * @param  {[对象]} e [event对象，由事件函数内部传入]
